@@ -1,4 +1,15 @@
-# bosh CLI
+# Bosh CLI
+
+<div>
+    <a href="https://snapcraft.io/cf-bs">
+        <img alt="Get it from the Snap Store" src="https://snapcraft.io/static/images/badges/en/snap-store-white.svg" />
+    </a>
+</div>
+<div>
+    <a href="https://snapcraft.io/cf-bs">
+        <img alt="cf-bs" src="https://snapcraft.io/cf-bs/badge.svg" />
+    </a>
+</div>
 
 * Documentation: [bosh.io/docs/cli-v2](https://bosh.io/docs/cli-v2.html)
 * Slack: #bosh on <https://slack.cloudfoundry.org>
@@ -7,6 +18,28 @@
 * Roadmap: [Pivotal Tracker](https://www.pivotaltracker.com/n/projects/956238)
 
 ## Install
+
+**Mac OS X**
+
+```sh
+$ brew install cloudfoundry/tap/bosh-cli
+```
+
+**Linux**
+
+You have to make sure you have [installed snapd](https://snapcraft.io/docs/installing-snapd) for your linux distro. 
+
+```sh
+snap install cf-bs
+```
+
+You can also alias `cf-bs` to `bosh` in your `.bashrc` file. 
+
+```sh
+echo "alias bosh='cf-bs'" >> ~/.bashrc
+```
+
+**More Info**
 
 - [https://bosh.io/docs/cli-v2-install/](https://bosh.io/docs/cli-v2-install/)
 

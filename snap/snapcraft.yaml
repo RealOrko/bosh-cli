@@ -1,0 +1,23 @@
+name: cf-bs
+base: core18
+version: '6.2.1'
+summary: BOSH CLI v2+
+description: |
+  BOSH CLI v2+
+
+grade: stable # devel/stable
+confinement: strict # devmode/strict
+
+parts:
+  cf-bs:
+    plugin: go
+    source-type: git
+    source-tag: v6.2.1
+    source: .
+    source-subdir: .
+    go-importpath: github.com/cloudfoundry/bosh-cli
+    build-packages:
+      - gcc
+apps:
+  cf-bs:
+    command: bin/bosh-cli
